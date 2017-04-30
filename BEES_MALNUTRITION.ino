@@ -50,7 +50,7 @@ int malnutrition[6][15];
 void setup() {
   //	pinMode(led, OUTPUT);
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);	
-  FastLED.setBrightness(5);
+  //FastLED.setBrightness(5);
 
   setUpBees();
   setUpMalnutrition();
@@ -62,7 +62,7 @@ void loop() {
   for(int i=1; i<15; i++)
   {
     //call_async_threads();
-    for(int region=0; region<6; region++)
+    for(int region=0; region<4; region++)
     {
       int beesDensity = bees[region][i];
       int redBees = beesDensity;
