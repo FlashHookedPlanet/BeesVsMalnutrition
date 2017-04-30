@@ -50,7 +50,7 @@ int malnutrition[3][15];
 void setup() {
   //	pinMode(led, OUTPUT);
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);	
-  FastLED.setBrightness(5);
+  //FastLED.setBrightness(5);
 
   setUpBees();
   setUpMalnutrition();
